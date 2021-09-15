@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "516345638347",
+    "project_id": "timov-be46b",
+    "storage_bucket": "timov-be46b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516345638347:android:386350e73ae3ea881e9a4e",
+        "android_client_info": {
+          "package_name": "com.pws.timov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516345638347-kijqtgrbtgqqera0r2e3eq7c5jhsoh01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACijONYy5P15vtzXcn3ejg_3utCZ5dLe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516345638347-kijqtgrbtgqqera0r2e3eq7c5jhsoh01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

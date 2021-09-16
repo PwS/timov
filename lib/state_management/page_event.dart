@@ -14,7 +14,7 @@ class GoToLoginPage extends PageEvent {
   List<Object> get props => [];
 }
 
-class GoToMainPage extends PageEvent {
+class GoToHomePage extends PageEvent {
   @override
   List<Object> get props => [];
 }

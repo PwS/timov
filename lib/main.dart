@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:timov/services/service.dart';
-import 'package:timov/state_management/page_bloc.dart';
-import 'package:timov/state_management/user_bloc.dart';
+import 'package:timov/state_management/state_management.dart';
 import 'package:timov/ui/pages/pages.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -20,10 +19,15 @@ class MyApp extends StatelessWidget {
       child: MultiBlocProvider(
           providers: [
             BlocProvider(create: (_) => PageBloc()),
-            BlocProvider(create: (_) => UserBloc())
+            BlocProvider(create: (_) => UserBloc()),
+            BlocProvider(create: (_) => ThemeBloc())
           ],
-          child:
-              MaterialApp(debugShowCheckedModeBanner: false, home: Wrapper())),
+          child: BlocBuilder<ThemeBloc, ThemeState>(
+            builder: (_, themeState) => MaterialApp(
+                theme: themeState.themeData,
+                debugShowCheckedModeBanner: false,
+                home: Wrapper()),
+          )),
     );
   }
 }

@@ -19,7 +19,7 @@ class ServiceAuth {
 
       return SignInSignUpResult(user: user);
     } catch (e) {
-      return SignInSignUpResult(message: e.toString().split(',')[1]);
+      return SignInSignUpResult(message: e.toString().split(',')[1].trim());
     }
   }
 
@@ -34,7 +34,7 @@ class ServiceAuth {
 
       return SignInSignUpResult(user: user);
     } catch (e) {
-      return SignInSignUpResult(message: e.toString().split(',')[1]);
+      return SignInSignUpResult(message: e.toString().split(',')[1].trim());
     }
   }
 
